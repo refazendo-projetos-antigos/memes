@@ -1,12 +1,23 @@
 {
-    "name": "refazendo-projetos-antigos/memes",
-    "description": "Refazendo um antigo site que havia iniciado, uma rede social dos primeiros memes",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Tadeu Barbosa",
-            "email": "tadeufbarbosa@gmail.com"
-        }
+  "name": "refazendo-projetos-antigos/memes",
+  "description": "Refazendo um antigo site que havia iniciado, uma rede social dos primeiros memes",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tadeu Barbosa",
+      "email": "tadeufbarbosa@gmail.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "config/load.php"
     ],
-    "require": {}
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "vlucas/phpdotenv": "^3.4",
+    "larapack/dd": "1.*"
+  }
 }
