@@ -2,9 +2,7 @@
 
 require_once 'define.php';
 
-Conecta::conectar();
-
-function __autoload($classes){
+spl_autoload_register(function($classes){
     
     if(file_exists(sprintf("class/%s.class.php", $classes))){
         require_once sprintf("class/%s.class.php", $classes);
@@ -18,4 +16,6 @@ function __autoload($classes){
         require_once sprintf("%s.class.php", $classes);
     }
     
-}
+});
+
+Conecta::conectar();
