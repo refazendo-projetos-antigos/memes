@@ -1,0 +1,12 @@
+{
+    "name": "refazendo-projetos-antigos/memes",
+    "description": "Refazendo um antigo site que havia iniciado, uma rede social dos primeiros memes",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tadeu Barbosa",
+            "email": "tadeufbarbosa@gmail.com"
+        }
+    ],
+    "require": {}
+}
