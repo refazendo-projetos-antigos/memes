@@ -10,10 +10,11 @@
   ],
   "autoload": {
     "files": [
-      "config/load.php"
+      "bootstrap/load.php"
     ],
     "psr-4": {
-      "App\\": "app/"
+      "App\\": "app/",
+      "App\\Sources\\": "sources/"
     }
   },
   "require": {

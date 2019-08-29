@@ -1,0 +1,23 @@
+{
+  "name": "memes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/refazendo-projetos-antigos/memes.git"
+  },
+  "author": "Tadeu Barbosa <tadeufbarbosa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/refazendo-projetos-antigos/memes/issues"
+  },
+  "homepage": "https://github.com/refazendo-projetos-antigos/memes#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

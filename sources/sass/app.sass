@@ -1,0 +1,129 @@
+@import 'includes/resets'
+@import 'main'
+
+body
+  width: 100%
+  height: 100%
+  position: relative
+  background-color: #4c584a
+
+  &:before
+    content: ' '
+    display: block
+    position: fixed
+    width: 105%
+    height: 105%
+    background-image: url('../images/dad.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    z-index: -3
+    top: -5%
+    left: -5%
+
+  &:after
+    content: ' '
+    display: block
+    position: fixed
+    width: 105%
+    height: 105%
+    z-index: -2
+    top: -5%
+    left: -5%
+
+.container
+  width: 100%
+
+.content
+  width: 95%
+  margin: 0 auto
+  padding: 1rem
+
+  @include laptop
+    width: 980px
+    padding: 0
+
+.navbar
+  width: 100%
+  height: 80px
+  background: #ffffff
+  border-bottom: 1px solid #eeeeee
+  position: relative
+
+  .navbar-center
+    width: 100%
+    @extend .clearfix
+
+    @include desktop
+      padding: 0 15px
+
+    @include laptop
+      width: 980px
+      margin: 0 auto
+
+  #logo
+    width: 120px
+    height: 80px
+    background-image: url('../images/logo.png')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    margin: 0 auto
+
+    @include biggers
+      float: left
+      margin: 0
+
+  #navbar-mobile
+    width: 80px
+    height: 80px
+    line-height: 75px
+    display: block
+    position: absolute
+    right: 0
+    top: 0
+    margin: auto
+    padding: 0 15px
+    cursor: pointer
+    border-left: 1px dotted #dddddd
+    font-size: 13px
+    color: #cccccc
+    text-align: center
+
+    @include biggers
+      display: none
+
+    &.active
+      background: #dddddd
+
+  #links
+    display: none
+    background: #ffffff
+
+    a
+      display: block
+      width: 100%
+      padding: 10px
+      line-height: 50px
+      border-bottom: 1px solid #eeeeee
+      color: #cccccc
+      font-size: 15px
+
+    @include biggers
+      float: right
+      display: block !important
+      background: none
+
+      a
+        display: inline-block
+        width: 80px
+        padding: 0 5px
+        line-height: 80px
+        border-bottom: none
+        text-align: center
+        font-size: 13px
+
+        &:hover, &.active
+          line-height: 74px
+          color: $primary
+          border-bottom: 3px solid $primary
