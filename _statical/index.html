@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home | Memes</title>
+  <base href="/">
+  <link rel="shortcut icon" href="public/favicon.ico">
+  <link rel="stylesheet" href="public/css/app.css">
+  <link rel="stylesheet" href="public/css/pages/home.css" /></head>
+<body>
+
+  <header role="header">
+    <nav class="navbar">
+      <div class="navbar-center">
+        <div id="logo"></div>
+        <div id="navbar-mobile" onclick="openMenu()">
+          menu
+        </div>
+        <div id="links">
+          <a href="/">home</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main" class="container">
+    <div class="content">
+      <div id="home-top">
+        <div id="home-top-left">
+          <nav id="home-top-left-menu">
+            <div class="home-top-left-menu active">Texto</div>
+            <div class="home-top-left-menu">Imagem</div>
+          </nav>
+          <div id="home-top-left-content">
+            <div class="home-top-left-content active">
+              <textarea id="home-top-left-content-textarea" placeholder="~le postagem"></textarea>
+            </div>
+            <div class="home-top-left-content">
+              post a new image
+            </div>
+          </div>
+        </div>
+        <div id="home-top-right">
+          <div id="home-top-right-items">
+            <div class="home-top-right-arrows" data-type="prev">&ltrif;</div>
+            <div id="home-top-right-items-center">
+              <div class="home-top-right-item active" style="background-image:url('public/images/reactions/1.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/2.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/3.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/4.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/5.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/6.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/7.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/8.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/9.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/10.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/11.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/12.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/13.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/14.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/15.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/16.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/17.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/18.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/19.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/20.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/21.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/22.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/23.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/24.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/25.jpg')"></div>
+              <div class="home-top-right-item" style="background-image:url('public/images/reactions/26.jpg')"></div>
+            </div>
+            <div class="home-top-right-arrows" data-type="next">&rtrif;</div>
+          </div>
+          <div id="home-top-right-memes">
+            <label for="insert_meme" title="Inserir o meme na postagem">
+              <input type="checkbox" name="insert_meme" id="insert_meme" /> Inserir um meme
+            </label>
+          </div>
+          <div id="home-top-right-submit">
+            <button type="submit">Postar</button>
+          </div>
+        </div>
+      </div>
+      <div id="home-posts">
+        <div class="home-posts">
+          <div class="home-posts-image">
+            <div class="home-posts-image-before" style="background-image:url('public/images/users/68eac15d593541eb53c727a9a4a73e66.jpg');"></div>
+            <div class="home-posts-image-after" style="background-image:url('public/images/users/68eac15d593541eb53c727a9a4a73e66.jpg');"></div>
+          </div>
+          <div class="home-posts-content">
+            <a href="#">DERPINA</a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas saepe pariatur fugiat nulla beatae officia. Commodi culpa voluptate, aut alias incidunt sunt repellat harum dolor, dolores itaque dolore illum.</p>
+          </div>
+        </div>
+        <div class="home-posts">
+          <div class="home-posts-image">
+            <div class="home-posts-image-before" style="background-image:url('public/images/users/f7138e1164716c399ba932e863b0d6c2.jpg');"></div>
+            <div class="home-posts-image-after" style="background-image:url('public/images/users/f7138e1164716c399ba932e863b0d6c2.jpg');"></div>
+          </div>
+          <div class="home-posts-content">
+            <a href="#">Ted</a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas saepe pariatur fugiat nulla beatae officia. Commodi culpa voluptate, aut alias incidunt sunt repellat harum dolor, dolores itaque dolore illum.</p>
+          </div>
+        </div>
+        <div class="home-posts">
+          <div class="home-posts-image">
+            <div class="home-posts-image-before" style="background-image:url('public/images/users/derp.png');"></div>
+            <div class="home-posts-image-after" style="background-image:url('public/images/users/derp.png');"></div>
+          </div>
+          <div class="home-posts-content">
+            <a href="#">DERP</a>
+            <p>hUr dur</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+  const openMenu = function() {
+    document.getElementById('links').style.display = document.getElementById('links').style.display=='block'? 'none' : 'block'
+  }
+  if(document.querySelector('[href^="/"]')!=null) {
+    document.querySelector('[href^="/"]').classList.add('active')
+  }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script>
+  $(function(){
+    const icons = $('.home-top-right-item');
+    let iconsIndex = 0;
+    const countIcons = icons.length;
+    $('.home-top-right-arrows').on('click', function() {
+      const type = this.dataset.type;
+      if(type=='next') {
+        iconsIndex = iconsIndex==countIcons-1? 0: iconsIndex+1;
+      } else {
+        iconsIndex = iconsIndex==0? countIcons-1: iconsIndex-1;
+      }
+      icons.removeClass('active').eq(iconsIndex).addClass('active');
+    });
+  });
+  </script>
+</body>
+</html>
